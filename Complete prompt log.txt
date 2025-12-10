@@ -1,0 +1,19 @@
+1.Write a python code that cleans the imported dataset in the following way: 
+
+Import nltk and use "!pip install contractions", use it to resolve all the contractions in the dataset's text. It should remove punctuation, white spaces, stop words, special characters, html or xml tags (if they are in the dataset). It should also convert numbers into their lettered form to make working with the corpus easier, as well as turn capitalized letters lower case. Finally, make sure to lemmatize and stem the text. Do all of this in one method and in one cell. After the code has been written, display the first ten sentences of the dataset in their newly cleaned form.
+
+2.Create an exploratory data analysis of the cleaned data set. Visualize it with a PCA graph.
+
+3.Add  progress bar to the method to visualize how long it will take for it to finish running and to show how much of the text cleaning process it has successfully done so far.
+
+4.Split the cleaned dataset to a train set (80%) and to a test set (20%). We have to ensure that overfitting doesn't arise, so make sure to handle the dropout set well. Add a validation set as well, that should be split off from the test set, making them both 10%.
+
+5.Tokenize the dataset's cleaned text. After that is done apply both Count Vectorization and TF-IDF vectorization to it. Add a progress bar to this too.
+
+6.Create a 2D visualization of both the Count Vectorized and the TF-IDF vectorized forms of the dataset. Label the data sets by their proper names and update the CV and TF-IDF visualizations accordingly.
+
+7.Create a Machine Learning model in python and teach it on the train dataset. Then  test and evaluate it's accuracy using the respective data sets.
+
+8.Use the model to create an application with Gradio. The application will be a text prediction software that can sort a given text based prompt into the data set's different "news classes". Then, the app should calculate and parse out which topic was mentioned the most and at the click of a button it should display a brief, one sentence summary of that specific topic.
+
+Now add a field that displays which news topics were mentioned and how many times.
